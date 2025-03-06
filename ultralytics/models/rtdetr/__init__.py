@@ -1,7 +1,7 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
-from .model import RTDETR
-from .predict import RTDETRPredictor
+from .model import RTDETR,RTDETRWithEmbeddings
+from .predict import RTDETRPredictor,RTDETRPredictorWithEmbeddings
 from .val import RTDETRValidator
 
-__all__ = "RTDETRPredictor", "RTDETRValidator", "RTDETR"
+__all__ = "RTDETRPredictor", "RTDETRValidator", "RTDETR",RTDETRPredictorWithEmbeddings,RTDETRWithEmbeddings

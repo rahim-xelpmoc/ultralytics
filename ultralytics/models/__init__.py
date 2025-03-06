@@ -2,8 +2,8 @@
 
 from .fastsam import FastSAM
 from .nas import NAS
-from .rtdetr import RTDETR
+from .rtdetr import RTDETR,RTDETRWithEmbeddings
 from .sam import SAM
 from .yolo import YOLO, YOLOWorld
 
-__all__ = "YOLO", "RTDETR", "SAM", "FastSAM", "NAS", "YOLOWorld"  # allow simpler import
+__all__ = "YOLO", "RTDETR", "SAM", "FastSAM", "NAS", "YOLOWorld",RTDETRWithEmbeddings  # allow simpler import

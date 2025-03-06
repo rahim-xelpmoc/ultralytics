@@ -480,7 +480,7 @@ class RTDETRDecoder(nn.Module):
             self.query_pos_head,
             attn_mask=attn_mask,
         )
-        x = dec_bboxes, dec_scores, enc_bboxes, enc_scores, dn_meta
+        x = dec_bboxes, dec_scores, enc_bboxes, enc_scores, dn_meta,embed
         if self.training:
             return x
         # (bs, 300, 4+nc)
